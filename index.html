@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Avançado</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>To-do list</title>
+    <script src="src/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>Minhas Tarefas em ...</h1>
+            <h1><span id="date"></span></h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="todo-input-titulo" placeholder="O que você vai fazer?" />
+                <input type="text" id="todo-input-prazo" placeholder="Qual o prazo da tarefa?" />
+                <button type="submit" id="enter">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input-titulo" />
+                <input type="text" id="edit-input-prazo" />
+                <button type="submit" class="saveBtn">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+
+        <header>
+            <h1>Tarefas</h1>
+        </header>
+        <div id="todo-list"></div>
+    </div>
+</body>
+
+</html>
